@@ -75,11 +75,14 @@ expenses_schema = ExpenseSchema(many=True)
 #     if User.query.filter_by(email = email).first():
 #         return {"error": True, "success": False, "data": None, 'msg': 'Used email'}
 
-@app.route('/api/auth', methods=["post"])
-def auth():
-    data = request.get_json()
-    if not data:
-        return {"error": True, "success": False, "data": None, 'msg': 'please specify the data'}
+# @app.route('/api/auth', methods=["post"])
+# def auth():
+#     data = request.get_json()
+#     if not data:
+#         return {"error": True, "success": False, "data": None, 'msg': 'please specify the data'}
+#     else:
+#         user = request.json['username']
+#         password = request.json['password']
 
 @app.route('/api/create')
 def index():

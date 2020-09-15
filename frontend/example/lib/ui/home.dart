@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Areix Ledger'),
+        title: const Text('Mone Expense App'),
         actions:
             //       <Widget>[SortingButton()],
             <Widget>[SortingButton(), SettingsButton()],

@@ -109,7 +109,9 @@ class _LoginState extends State<Login> {
                                                   color: Colors.white)),
                                           shape: StadiumBorder(),
                                           color: Colors.blueGrey,
-                                          onPressed: () {},
+                                          onPressed: () {
+                                            Navigator.pushNamed(context, '/home');
+                                          },
                                         ),
                                       ),
                                     ),
